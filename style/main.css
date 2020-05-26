@@ -1,0 +1,124 @@
+/* 初期設定 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    height: 50px;
+    min-width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    background-color: #000;
+}
+
+.header a {
+    position: absolute;
+    left: 50px;
+    width: 124px;
+    height: 45px;
+    background: url("../image/logo.png") no-repeat 0 0;
+    background-size: contain;
+}
+
+.header .menu {
+    display: block;
+    position: absolute;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    color: #FFF;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    min-height: 1024px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 256px 256px 256px 256px;
+    margin: 30 auto;
+}
+
+.container > .size-m {
+    position: relative;
+    display: block;
+    margin: 10px;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.container > .size-m img {
+    width: 100%;
+}
+.container > .size-m .over-text {
+    width: 100%;
+}
+.container > .size-m.last{
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+}
+.container > .size-s {
+    position: relative;
+    display: block;
+    margin: 10px;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.container > .size-s img {
+    width: 100%;
+}
+
+.over-window {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.over-window:hover {
+    opacity: .5;
+    display: block;
+}
+
+.over-window > .inner-wrap {
+    display: block;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    background: #000;
+    text-align: center;
+}
+
+.over-window > .inner-wrap > p {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.size-m .over-window > .inner-wrap {
+    width: 256px;
+}
+.size-s .over-window > .inner-wrap {
+    width: 128px;
+}
