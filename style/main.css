@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #fff
 }
 
 .header {
@@ -17,7 +18,7 @@ body {
 
 .header a {
     position: absolute;
-    left: 50px;
+    left: 30%;
     width: 124px;
     height: 45px;
     background: url("../image/logo.png") no-repeat 0 0;
@@ -27,7 +28,7 @@ body {
 .header .menu {
     display: block;
     position: absolute;
-    right: 50px;
+    right: 10%;
     width: 45px;
     height: 45px;
     color: #000;
