@@ -125,3 +125,7 @@ body {
 .size-s .over-window > .inner-wrap {
     width: 128px;
 }
+
+p.padding {
+  padding: 25px;
+}
