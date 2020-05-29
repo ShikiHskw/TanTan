@@ -16,7 +16,7 @@ body {
     z-index: 99;
 }
 
-.header a {
+.header .logo{
     position: absolute;
     left: 30%;
     width: 124px;
